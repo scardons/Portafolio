@@ -1,19 +1,14 @@
+// src/components/ParticlesBackground.tsx
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import {
-  type Container,
-  type ISourceOptions,
-  MoveDirection,
-  OutMode,
-} from "@tsparticles/engine";
-import { loadSlim } from "@tsparticles/slim"; 
+import { type Container, type ISourceOptions, MoveDirection, OutMode } from "@tsparticles/engine";
+import { loadSlim } from "@tsparticles/slim";
 
 export const ParticlesBackground = () => {
-    const [init, setInit] = useState(false);
+  const [init, setInit] = useState(false);
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
-
       await loadSlim(engine);
     }).then(() => {
       setInit(true);
@@ -26,11 +21,6 @@ export const ParticlesBackground = () => {
 
   const options: ISourceOptions = useMemo(
     () => ({
-      background: {
-        color: {
-          value: "#0d0d0d",
-        },
-      },
       fpsLimit: 120,
       interactivity: {
         events: {
@@ -55,10 +45,10 @@ export const ParticlesBackground = () => {
       },
       particles: {
         color: {
-          value: "#ffffff",
+          value: "#0d47a1",
         },
         links: {
-          color: "#ffffff",
+          color: "#0d47a1",
           distance: 150,
           enable: true,
           opacity: 0.5,
@@ -97,11 +87,13 @@ export const ParticlesBackground = () => {
 
   if (init) {
     return (
-      <Particles
-        id="tsparticles"
-        particlesLoaded={particlesLoaded}
-        options={options}
-      />
+      <div className="absolute top-0 left-0 w-full h-full z-0">
+        <Particles
+          id="tsparticles"
+          particlesLoaded={particlesLoaded}
+          options={options}
+        />
+      </div>
     );
   }
 

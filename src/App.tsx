@@ -10,11 +10,7 @@ import { ParticlesBackground } from './components/ParticlesBackground';
 
 
 const App = () => (
-  <div>
-    {/* Este es el div de prueba para ver si Tailwind funciona */}
-    <div className="bg-purple-500 text-white p-4">
-      Esto debería tener fondo rojo si Tailwind funciona.
-    </div>
+  <div className='bg-[#0d0d0d] min-h-screen'>
     <ParticlesBackground />
     <Navbar />
     <Hero />

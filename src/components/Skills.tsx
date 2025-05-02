@@ -1,7 +1,7 @@
 // src/components/Skills.tsx
 import { motion } from 'framer-motion';
 
-const skills = ['React', 'Tailwind CSS', 'Framer Motion', 'JavaScript', 'HTML', 'CSS'];
+const skills = ['React', 'Tailwind CSS', 'Framer Motion', 'JavaScript', 'HTML', 'CSS', 'Typescript'];
 
 const Skills = () => (
   <section id="skills" className="py-20 bg-gray-100">
