@@ -6,7 +6,7 @@ const principles = [
   {
     icon: Layers,
     title: 'Clean Architecture',
-    description: 'Domain-driven design with strict separation of concerns across presentation, application, domain, and infrastructure layers.',
+    description: 'Domain driven design with strict separation of concerns across presentation, application, domain, and infrastructure layers.',
   },
   {
     icon: GitBranch,

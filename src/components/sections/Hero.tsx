@@ -52,7 +52,7 @@ const Hero = () => (
           className="text-gray-400 max-w-2xl mx-auto mb-8 text-lg leading-relaxed"
         >
           I build scalable enterprise platforms with clean architecture,
-          real-time capabilities, and production-grade performance.
+          real time capabilities, and production grade performance.
         </motion.p>
 
         <motion.div
